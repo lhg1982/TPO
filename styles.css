@@ -6,6 +6,7 @@
 body {
   background-image: url(/img/fondo-abstracto.png);
 	background-size: contain;
+	image-rendering: optimizeQuality;
 }
 
 .links {
@@ -62,7 +63,7 @@ body {
 }
 
 .ilustracion_img {
-	position:grid;
+	position:relative;
 	margin-left: 40%;
 	margin-top: 15%;
 	width: 25%;
@@ -104,9 +105,6 @@ body {
 	margin-left: 70%;
 	margin-top: -1%;
 }
-
-
-
 
 .contenedor {
   min-width: 95%;
@@ -201,15 +199,41 @@ body {
 @media screen and (max-width: 640px){
 	.contenedor {
 		grid-template-areas: "header header header"
-						 ". principal"
+						 "principal principal principal"
 						 "sidebar sidebar sidebar"
-						 "widget-1 widget-1 widget-2"
+						 "widget-1 widget-1 widget-1"
+						 "widget-2 widget-2 widget-2"
 						 "footer footer footer";
 	}
+
+	.iconos {
+		background-color: rgba(255, 255, 255, 0.734);
+		border: solid rgb(33, 130, 130);
+		height: 5%;
+		width: 3%;
+		padding: 0.9%;
+		border-radius: 50%;
+		border-width: 0.125rem;
+	}
+
 	.links {
 		text-decoration: none;
 		font-family: "Poppins",sans-serif;
-		font-size: small;
+		font-size: smaller;
 		font-weight: 400;
 		color: #aa15cf;
+	}
+
+	.links.zapatillas {
+		position:absolute;
+		margin-left: 45%;
+		margin-top: 13%;
+		}
+	
+	.iconos.zapatillas {
+		position:absolute;
+		margin-left: 45%;
+		margin-top: 5%;
+		}
+
 }
