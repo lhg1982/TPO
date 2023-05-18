@@ -5,8 +5,7 @@
 
 body {
   background-image: url(/img/fondo-abstracto.png);
-	background-size: contain;
-	image-rendering: optimizeQuality;
+	background-size:cover;
 }
 
 .links {
@@ -104,6 +103,37 @@ body {
 	position: absolute;
 	margin-left: 70%;
 	margin-top: -1%;
+}
+
+/* CSS para formulario de contactos contactos */
+.formulario {
+	max-width: 50%;
+	margin-left: 20%;
+	margin-top: -10%;
+	padding: 5%;
+	border-radius: 50%;
+	text-align: left;
+  font-family: 'Comme', sans-serif;
+  font-size: 1.2rem;
+  color: rgb(100, 100, 100);
+}
+
+input[type=text],input[type=email],textarea {
+	width: 50%;
+	text-align: left;
+	margin: 10px;
+	padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 20px; /* Rounded borders */
+  box-sizing:content-box; /* Make sure that padding and width stays in place */
+	
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.field {
+padding: 4%;
 }
 
 .contenedor {
@@ -219,7 +249,7 @@ body {
 	.links {
 		text-decoration: none;
 		font-family: "Poppins",sans-serif;
-		font-size: smaller;
+		font-size: x-large;
 		font-weight: 400;
 		color: #aa15cf;
 	}
