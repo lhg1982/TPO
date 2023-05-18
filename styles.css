@@ -1,0 +1,215 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+  background-image: url(/img/fondo-abstracto.png);
+	background-size: contain;
+}
+
+.links {
+	text-decoration: none;
+	font-family: "Poppins",sans-serif;
+	font-size: large;
+	font-weight: 800;
+	color: #aa15cf;
+}
+
+.iconos {
+	background-color: rgba(255, 255, 255, 0.734);
+	border: solid rgb(33, 130, 130);
+	height: 10%;
+	width: 6%;
+	padding: 0.9%;
+	border-radius: 50%;
+	border-width: 0.125rem;
+}
+
+.links.asientos {
+	position: absolute;
+	margin-left: 20%;
+	margin-top: 5%;
+}
+
+.links.cascos {
+	position:absolute;
+ 	margin-left: 45%;
+}
+
+.links.manubrios {
+	position: absolute;
+	margin-left: 70%;
+	margin-top: 5%;
+}
+
+.iconos.asientos {
+	position: absolute;
+	margin-left: 20%;
+	margin-top: 8%;
+}
+
+.iconos.cascos {
+	position:absolute;
+ 	margin-left: 45%;
+	margin-top: 3%;
+}
+
+.iconos.manubrios {
+	position: absolute;
+	margin-left: 70%;
+	margin-top: 8%;
+}
+
+.ilustracion_img {
+	position:grid;
+	margin-left: 40%;
+	margin-top: 15%;
+	width: 25%;
+	height: 25%;
+}
+
+.links.cadenas {
+	position: absolute;
+	margin-left: 20%;
+	margin-top: 7%;
+}
+
+.links.zapatillas {
+	position:absolute;
+ 	margin-left: 45%;
+	margin-top: 13%;
+}
+
+.links.cubiertas {
+	position: absolute;
+	margin-left: 70%;
+	margin-top: 7%;
+}
+
+.iconos.cadenas {
+	position: absolute;
+	margin-left: 20%;
+	margin-top: -1%;
+}
+
+.iconos.zapatillas {
+	position:absolute;
+ 	margin-left: 45%;
+	margin-top: 5%;
+}
+
+.iconos.cubiertas {
+	position: absolute;
+	margin-left: 70%;
+	margin-top: -1%;
+}
+
+
+
+
+.contenedor {
+  min-width: 95%;
+	max-width: 1000px;
+	margin: 20px auto;
+	padding: 20px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
+
+	grid-template-areas: 	"header header header"
+						 						"principal principal principal"
+						 						"widget-1 widget-2 sidebar"
+						 						"footer footer footer";
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .principal,
+.contenedor .sidebar,
+.contenedor .footer {
+	
+	padding: 10px;
+	border-radius: 4px;
+}
+
+.contenedor .header {
+	background-color: transparent;
+	grid-area: header;
+}
+
+.header .marca {
+  font-family: "rufina",serif;
+  font-size: 1.8rem;
+  text-align: center;
+	color: rgb(33, 130, 130);
+  padding: 1.5rem;
+}
+
+.header .p1 {
+  text-align: center;
+  font-family: 'Comme', sans-serif;
+  font-size: 1.2rem;
+  color: rgb(100, 100, 100);
+  padding: 1.5rem;
+
+}
+
+.contenedor .principal {
+	grid-area: principal;
+	padding-top: 50px;
+
+}
+
+.contenedor .sidebar {
+	grid-column: 3 / 4;
+	background: #fAA43D;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100px;
+	grid-area: sidebar;
+}
+
+.contenedor .widget-1,
+.contenedor .widget-2 {
+	background: #55a8fd;
+	color: #fff;
+	height: 100px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contenedor .widget-1 {
+	grid-area: widget-1;
+}
+
+.contenedor .widget-2 {
+	grid-area: widget-2;
+}
+
+.contenedor .footer {
+	background: #12203E;
+	color: #fff;
+	grid-area: footer;
+}
+
+@media screen and (max-width: 640px){
+	.contenedor {
+		grid-template-areas: "header header header"
+						 ". principal"
+						 "sidebar sidebar sidebar"
+						 "widget-1 widget-1 widget-2"
+						 "footer footer footer";
+	}
+	.links {
+		text-decoration: none;
+		font-family: "Poppins",sans-serif;
+		font-size: small;
+		font-weight: 400;
+		color: #aa15cf;
+}
