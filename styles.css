@@ -356,7 +356,20 @@ footer {
 @import url('https://fonts.googleapis.com/css2?family=Comme:wght@500&family=Prompt:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comme:wght@700&display=swap');
 
+.contenedor1 {
+	min-width: 95%;
+	max-width: 1000px;
+	margin: 20px;
+	padding: 20px;
+	display: grid;
+	grid-gap: 20px;
 
+}
+
+.contenedor1 .footer {
+	padding: 10px;
+	border-radius: 4px;
+}
 
 .separador {
     padding: 0%;
@@ -537,10 +550,10 @@ a {
 }
 
 .foto-asiento {
-    position: right;
+    position: relative;
     top: 2.8125rem;
     right: 9.375rem;
-	margin-left: 1rem;
+	
 }
 
 .inf {
