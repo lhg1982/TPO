@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/0db9b27398.js" crossorigin="anonymous"></script>
   <title>Contactos</title>
 </head>
 
@@ -27,43 +28,83 @@
     <form action="action_page.php"></form>
       <fieldset class="field">
         <legend>Datos de contacto</legend>
-        <br>
+        
         <!-- Nombre -->
         <label for="nombre">Nombre: </label>
-        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
-        <br>
-        <br>
+        <input type="text" name="nombre" id="nombre" class="form-control" form placeholder="Ingrese su nombre" required>
+        
         <!-- Apellido -->
         <label for="apellido">Apellido: </label>
-        <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
-        <br>
-        <br>
-
+        <input type="text" name="apellido" id="apellido" class="form-control" placeholder="Ingrese su apellido" required>
+        
         <!-- Correo electronico -->
         <label for="mail">Mail:</label>
-        <input type="email" name="mail" id="mail" placeholder="Ingrese su mail">
-        <br>
-        <br>
+        <input type="email" name="mail" id="mail" class="form-control" placeholder="Ingrese su mail" required>
 
         <!-- Asunto -->
         <label for="asunto">Asunto: </label>
-        <textarea id="asunto" name="asunto" placeholder="Ingrese el motivo de su contacto">
+        <textarea id="asunto" name="asunto" placeholder="Ingrese el motivo de su contacto" required>
         </textarea>
-        <br>
-        <br>
-        <br>
         
-        <input type="submit" value="Enviar">
-        <br>
-        <br>
-        <br>
+        <input class="submit" type="submit" value="Enviar" target="_blank">
+        
       </fieldset>
     </div>
   </main>
+
+<footer>
+    <!-- Section: Social media -->
+    <section class="redes-sociales">
+
+      <a class="btn btn-outline-light btn-floating" href="#" role="button" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+
+      <a class="btn btn-outline-light btn-floating" href="https://twitter.com/i/flow/login" role="button" target="_blank">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+
+      <a class="btn btn-outline-light btn-floating" href="https://www.instagram.com/" role="button" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+
+      <a class="btn btn-outline-light btn-floating" href="#!" role="button">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </section>
+
+    <!-- Section: Newsletter -->
+    <section class="newsletter">
+      <form action="action_page.php">
+        <div class="formulario">
+          <p class="news">
+            <strong>¿Queres recibir nuestro newsletter? Suscribite</strong>
+          </p>
+          <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese su nombre" required>  
+          <input type="email" name="mail" id="mail" class="form-control" placeholder="Ingrese su Correo" required>
+          <br>
+          <label class="newsdiario">
+            ¿Queres recibirlo diariamente?
+            <input type="checkbox" checked="checked" name="subscribe">
+          </label>
+          <input type="submit" value="Enviar" target="_blank">
+        </div>
+      </form>
+    </section>
+
+  <!-- Seccion: Copyright -->
+  <section class="copyright">
+  <div class="copytight">
+    © 2023 Copyright: Codo a Codo 2023, comisión "no me acuerdo"
+  </div>
+  </section>
+
+</footer>
   
-  <footer>
-      
-  </footer>
 </body>
 
 </html>
