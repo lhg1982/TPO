@@ -160,6 +160,12 @@ input[type=enviar]:hover {
   background-color: #45a049;
 }
 
+.contacto {
+	margin-top: -10%;
+	margin-left: -10%;
+
+}
+
 /* CIERRE - CSS para formulario de contactos contactos */
 
 /* APERTURA - CSS para footer */
@@ -187,6 +193,16 @@ footer {
 }
 
 .fa-brands {
+	background-color: black;
+	color: #fff;
+  padding: 12px;
+	font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa-envelope {
 	background-color: black;
 	color: #fff;
   padding: 12px;
@@ -258,6 +274,9 @@ footer {
 	color: rgb(33, 130, 130);
   padding: 1.5rem;
 }
+.marca {
+position: fixed;
+}
 
 .header .p1 {
   text-align: center;
@@ -283,7 +302,7 @@ footer {
 	.contenedor {
 		grid-template-areas: "header header header"
 						 "principal principal principal"
-						 "sidebar sidebar sidebar"
+						 
 						 "footer footer footer";
 	}
 
