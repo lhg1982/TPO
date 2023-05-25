@@ -12,11 +12,11 @@
 </head>
 
 <body>
-<div class="contenedor">
+<div class="contenedor-home">
 
   <!--  HEADER: CON TITULO Y DESCRIPCION DEL HOME-->
   <header>
-  <div class="header">
+  <div class="header-home">
     <a class="btn btn-outline btn-floating" href="index.html" role="button">.
       <i class="fa-solid fa-house"></i>
     </a>
@@ -39,30 +39,24 @@
 
       <!--  ASIENTOS  -->
       <div class="modulos-sup">
-        <div class="asientos">
           <a href="asientos.html" target="_blank">
             <p class="links asientos">Asientos</p>
             <img class="iconos asientos" src="./img/seat.png" alt="foto de asiento">
           </a>
-        </div>
       </div>
       <!--  CASCOS  -->
       <div class="modulos-sup">
-        <div class="cascos">
           <a href="cascos.html" target="_blank">
             <p class="links cascos">Cascos</p>
             <img class="iconos cascos" src="img/casco.png" alt="foto de casco">
           </a>
-        </div>
       </div>
       <!--  MANUBRIOS  -->
       <div class="modulos-sup">
-        <div class="manubrios">
           <a href="manubrios.html" target="_blank">
             <p class="links manubrios">Manubrios</p>
             <img class="iconos manubrios" src="img/manubrio.png" alt="foto de manubrio">
           </a>
-        </div>
       </div>
 
     </div>
@@ -77,12 +71,10 @@
       
       <!--   CADENAS   -->
       <div class="modulos-bot">
-        <div class="cadenas">
           <a href="cadenas.html" target="_blank">
             <p class="links">Cadenas</p>
             <img class="iconos" src="img/cadena.png" alt="foto de cadena" width="90px" height="90px">
           </a>
-        </div>
       </div>
       <!--   ZAPATILLAS   -->
       <div class="modulos-bot">
@@ -106,63 +98,66 @@
   
   <!--  ESTE ES EL FOOTER CON FORMULARIO DE SUSCRIPCION  -->
   <footer>
+    <div class="footer-home">
   <!-- Section: Social media -->
-    <section class="redes-sociales">
+      <section class="redes-sociales">
   
-      <a class="btn btn-outline-light btn-floating" href="#" role="button" target="_blank">.
-        <i class="fa-brands fa-facebook"></i>
-      </a>
+        <a class="btn btn-outline-light btn-floating" href="#" role="button" target="_blank">.
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+    
+        <a class="btn btn-outline-light btn-floating" href="https://twitter.com/i/flow/login" role="button">.
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+    
+        <a class="btn btn-outline-light btn-floating" href="https://www.instagram.com/" role="button">.
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+    
+        <a class="btn btn-outline-light btn-floating" href="#!" role="button">.
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+    
+        <a class="btn btn-outline-light btn-floating" href="#!" role="button">.
+          <i class="fa-brands fa-github"></i>
+        </a>
   
-      <a class="btn btn-outline-light btn-floating" href="https://twitter.com/i/flow/login" role="button">.
-        <i class="fa-brands fa-twitter"></i>
-      </a>
-  
-      <a class="btn btn-outline-light btn-floating" href="https://www.instagram.com/" role="button">.
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-  
-      <a class="btn btn-outline-light btn-floating" href="#!" role="button">.
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
-  
-      <a class="btn btn-outline-light btn-floating" href="#!" role="button">.
-        <i class="fa-brands fa-github"></i>
-      </a>
+        <a class="btn btn-outline-light btn-floating" href="contacto.html" role="button">.
+          <i class="fa-sharp fa-regular fa-envelope"></i>
+        </a>
+      </section>
+    
+      <!-- Section: Newsletter -->
+      <section class="newsletter">
+        <form action="action_page.php">
+          <div class="formulario">
+            <p class="news">
+            <strong>¿Queres recibir nuestro newsletter? Suscribite</strong>
+            </p>
+            <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese su nombre" required>  
+            <input type="email" name="mail" id="mail" class="form-control" placeholder="Ingrese su Correo" required>
+            <br>
+            <label class="newsdiario">
+            ¿Queres el news diario?
+            <input type="checkbox" checked="checked" name="subscribe">
+            </label>
+            <label class="newsdiario">
+            ¿Queres solo las novedades del mes?
+            <input type="checkbox" checked="checked" name="subscribe">
+            </label>
+            <input type="submit" value="Enviar" target="_blank">
+          </div>
+        </form>
+      </section>
+    
+      <!-- Seccion: Copyright -->
+      <section class="copyright">
+      <div class="copytight">
+        © 2023 Copyright: Codo a Codo 2023, comisión "no me acuerdo"
+      </div>
+      </section>
 
-      <a class="btn btn-outline-light btn-floating" href="contacto.html" role="button">.
-        <i class="fa-sharp fa-regular fa-envelope"></i>
-      </a>
-    </section>
-  
-    <!-- Section: Newsletter -->
-    <section class="newsletter">
-      <form action="action_page.php">
-        <div class="formulario">
-          <p class="news">
-          <strong>¿Queres recibir nuestro newsletter? Suscribite</strong>
-          </p>
-          <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Ingrese su nombre" required>  
-          <input type="email" name="mail" id="mail" class="form-control" placeholder="Ingrese su Correo" required>
-          <br>
-          <label class="newsdiario">
-          ¿Queres el news diario?
-          <input type="checkbox" checked="checked" name="subscribe">
-          </label>
-          <label class="newsdiario">
-          ¿Queres solo las novedades del mes?
-          <input type="checkbox" checked="checked" name="subscribe">
-          </label>
-          <input type="submit" value="Enviar" target="_blank">
-        </div>
-      </form>
-    </section>
-  
-    <!-- Seccion: Copyright -->
-    <section class="copyright">
-    <div class="copytight">
-      © 2023 Copyright: Codo a Codo 2023, comisión "no me acuerdo"
     </div>
-    </section>
   </footer>
 
 </div>
