@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <script src="main.js"></script>
   <script src="https://kit.fontawesome.com/0db9b27398.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="img/favicon1.png">
   <title>Contactos</title>
@@ -28,32 +29,35 @@
 
   <main>
     <div class="formulario">
+    <br>
+    <br>
     <h3>Contactanos</h3>
     <br>
-    <form action="action_page.php"></form>
+    <form name="form_contacto" action="action_page.php">
       <fieldset class="field">
         <legend>Datos de contacto</legend>
         
         <!-- Nombre -->
         <label for="nombre">Nombre: </label>
-        <input type="text" name="nombre"  class="form-control" form placeholder="Ingrese su nombre" required>
+        <input type="text" name="nombre" id="name" class="form-control" placeholder="Ingrese su nombre" >
         
         <!-- Apellido -->
         <label for="apellido">Apellido: </label>
-        <input type="text" name="apellido" id="apellido" class="form-control" placeholder="Ingrese su apellido" required>
+        <input type="text" name="apellido" id="apellido" class="form-control" placeholder="Ingrese su apellido">
         
         <!-- Correo electronico -->
         <label for="mail">Mail:</label>
-        <input type="email" name="mail" class="form-control" placeholder="Ingrese su mail" required>
+        <input type="email" name="mail" class="form-control" placeholder="Ingrese su mail">
 
         <!-- Asunto -->
         <label for="asunto">Asunto: </label>
-        <textarea id="asunto" name="asunto" placeholder="Ingrese el motivo de su contacto" required>
+        <textarea id="asunto" name="asunto" placeholder="Ingrese el motivo de su contacto">
         </textarea>
         
-        <input class="submit" type="submit" value="Enviar" target="_blank">
+        <input class="submit" type="submit" value="Enviar" onclick="validacion">
         
       </fieldset>
+    </form>
     </div>
   </main>
 
@@ -103,7 +107,7 @@
           <input type="submit" value="Enviar" target="_blank">
         </div>
       </form>
-      <h3 class="contacto">hace CLICK para contactanos</h3>
+      <h3 class="contacto"></h3>
     </section>
 
   <!-- Seccion: Copyright -->
@@ -114,7 +118,7 @@
   </section>
 
 </footer>
-  
-</body>
 
+</body>
+<script src="main.js"></script>
 </html>
